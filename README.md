@@ -2,7 +2,7 @@
 
 # 🐍 Python Learning Journey
 
-This repo documents my progress in learning Python — from basics to DSA and interview problems.
+This repo documents my progress in learning Python — from basics.
 
 
 ## 🎯 Goal
