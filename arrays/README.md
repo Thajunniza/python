@@ -1,4 +1,7 @@
 
+
+# Array Operations
+
 # 📘 Array Creation in Python 
 
 Create arrays in Python using **List**, **array module**, and **NumPy**.
@@ -92,28 +95,38 @@ np.ones((2, 3))
 np.arange(1, 10, 2)
 ```
 
----
 
-## ⭐ Key Takeaways
-- Python **lists** = dynamic arrays (flexible, used in interviews).
-- `array` module = **homogeneous arrays** (need typecode).
-- NumPy arrays = best for **matrix / 2D / 3D operations**.
-- Set data type using `dtype=` in NumPy.
-- Always import NumPy like:
+#Array Insertion
+## ✅ 1. Insert in Python List
+Syntax:
 ```python
+list.insert(index, value)
+Example:
+
+python
+Copy code
+arr = [10, 20, 30, 40]
+arr.insert(2, 99)     # insert at index 2
+# [10, 20, 99, 30, 40]
+⏱ Time Complexity
+Inserting at any position: O(n) (elements shift)
+
+✅ 2. Insert in array Module (Homogeneous Array)
+python
+Copy code
+from array import array
+arr = array('i', [1, 2, 3])
+arr.insert(1, 99)
+# array('i', [1, 99, 2, 3])
+✅ 3. Insert in NumPy Array
+NumPy creates a new array when inserting.
+
+python
+Copy code
 import numpy as np
-```
-- Never call the module:
-```python
-❌ np([1,2,3])
-✔️ np.array([1,2,3])
-```
+arr = np.array([10, 20, 30])
+new_arr = np.insert(arr, 1, 99)
+# [10 99 20 30]
+⏱ Time Complexity
+Insert: O(n)
 
----
-
-## 🚀 Quick Practice
-1. Create a list `[1, 2, 3]`.  
-2. Create an integer array using `array('i', [...])`.  
-3. Create a NumPy float32 array.  
-4. Create a 2D NumPy array `[[1, 2], [3, 4]]`.  
-5. Create an array of 5 zeros using NumPy.
