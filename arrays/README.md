@@ -130,3 +130,7 @@ new_arr = np.insert(arr, 1, 99)
 ⏱ Time Complexity
 Insert: O(n)
 
+
+
+# Time and Space Complexity for Array Operations
+![alt text](image.png)

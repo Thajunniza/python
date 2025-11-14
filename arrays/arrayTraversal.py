@@ -16,8 +16,10 @@ traverseArray(arr)
 ##array module supports only one string-related typecode:
 arr1 = array('u', ['H', 'E', 'L', 'L', 'O'])
 traverseArray(arr1)
+print(arr1[3])
 
 ## so use numpy for string
 arr2 = np.array(['Sunday','Monday','Tuesday','Wednesday'])
 traverseArray(arr2)
+print(f"Length of Array:{len(arr2)}")
 
