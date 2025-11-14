@@ -132,5 +132,44 @@ Insert: O(n)
 
 
 
-# Time and Space Complexity for Array Operations
+# Time and Space Complexity for 1 D Array Operations
 ![alt text](image.png)
+
+# Time and Space Complexity for 2 D Array Operations
+![alt text](image-1.png)
+
+## When to use/Avoid Array:
+### Use
+- To store multiple varaibles of same data type
+- Random access
+- When Data Size is Known / Fixed
+- When You Need Contiguous Memory
+- When You Use Patterns Like
+    Two Pointers
+    Sliding Window
+    Binary Search
+    Prefix Sum
+    Kadane’s Algorithm
+- When You Care About CPU Cache Efficiency
+- When You Want Simple, Lightweight Data Structure
+### Avoid 
+- When You Need Frequent Insert/Delete in Middle
+- When Size Needs to Change Constantly
+- When Storing Mixed or Complex Data Structures
+- When Memory is a Big Constraint
+- When You Need Insert/Delete at Start Frequently
+
+## One-Line Memory Rule
+If your operations depend on positions/index → use arrays.
+If your operations depend on links → use linked lists / deque.
+
+## ⭐ Quick Decision Table
+| Scenario                    | Use Arrays? | Reason             |
+| --------------------------- | ----------- | ------------------ |
+| Fast indexing               | ✔ Yes       | O(1) access        |
+| Sliding window              | ✔ Yes       | Contiguous memory  |
+| Two pointers                | ✔ Yes       | Index-based logic  |
+| Many insert/delete (middle) | ❌ No        | O(n) shifting      |
+| Constant size changes       | ❌ No        | Resizing overhead  |
+| Numeric / ML operations     | ✔ Yes       | NumPy is optimized |
+| FIFO/LIFO                   | ❌ Use deque | O(1) operations    |
